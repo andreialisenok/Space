@@ -1,0 +1,10 @@
+extends pug/layouts/default
+block variables
+    - const title = "Space";
+block content
+    .wrapper
+        include views/layouts/header/header
+        include views/layouts/main/main
+        include views/layouts/footer/footer
+block scripts
+    script(src='js/main.min.js')
